@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios-03</title>
+    <style>
+        div{
+            
+            border-bottom: 2px black solid;
+            
+        }
+        h1{
+            border-top: 1px rgb(158, 68, 68) solid;
+            color: brown;
+            text-shadow: 1px 1px 3px black ;
+             }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Conteúdo</h1>
+        <ul>
+            <li>Classes</li>
+            <li>Atributos</li>
+            <li>Métodos</li>
+            <li>Instância de objetos</li>
+        
+        </ul>
+    </div>
+    <script>
+        class pessoa{           /*A classe é a passoa*/
+             constructor(nome){       /* Que é o atributo nome*/
+                 this.none = nome;
+            }
+            falar(frase){        /* esse é o metodo falar*/
+                console.log(this.none+ " disse: "+ frase);
+            }
+        }
+            var p1 = new pessoa("feansisco");
+            p1.falar("Oi, tudo bem?");        /*Instancia do objeto*/
+            p1.falar("Como vai?");
+
+        
+    </script>
+</body>
+</html>
